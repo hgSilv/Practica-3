@@ -16,9 +16,7 @@ class MisNoticias extends StatelessWidget {
           return _bloc..add(LeerNoticiasEvent());
         },
         child: BlocConsumer<MisNoticiasBloc, MisNoticiasState>(
-          listener: (context, state) {
-            //TODO: dialogo o snackbar de error
-          },
+          listener: (context, state) {},
           builder: (context, state) {
             if (state is NoticiasDescargadasState) {
               return Scaffold(
